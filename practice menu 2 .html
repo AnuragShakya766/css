@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title> practice menu</title>
+	</head>
+<body>
+<ul CLASS="NAV">
+	<li CLASS="ITEM dropdowm">HOME
+		<ul class="list ">
+		
+			<li class="item"> computer</li>
+			<li class="item"> mother border</li>
+			<li class="item"> computer</li>
+		</ul>
+	</li>
+	<li CLASS="ITEM">ABOUT</li>
+	<li CLASS="ITEM">GALLLERY</li>
+	<li CLASS="ITEM">LOGIN</li>
+</ul>
+<style>
+.nav{
+	
+	padding:0px;
+	overflow-y:auto;
+}
+.nav .item{
+	border:2px solid blue;
+	float:left;
+	list-style:none;
+	padding:16px 20px;
+	background:green;
+	color:white;
+	
+}
+.dropdowm  .item{
+	clear:both;
+}
+.nav .item:hover{
+	background:red;
+	
+}
+.dropdowm .list{
+	padding:0px;
+	display:none;
+}
+.dropdowm:hover .list{
+	display:block;
+}
+
+}

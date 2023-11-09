@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>menu</title>
+	</head>
+<body>
+<ul class="nav">
+	<li class="item option"><a href="3" class="link">Home</a>
+				<ul class="nav">
+	<li class="item"><a href="3" class="link">computer</a></li>
+	<li class="item"><a href="3" class="link">software</a></li>
+	<li class="item"><a href="3" class="link">Hardware</a></li>
+	<li class="item"><a href="3" class="link">Digital</a></li>
+	<li class="item"><a href="3" class="link">pyhton</a></li>
+</ul>
+	</li>
+	<li class="item"><a href="3" class="link">About</a></li>
+	<li class="item"><a href="3" class="link">Contact</a></li>
+	<li class="item"><a href="3" class="link">Gallery</a></li>
+	<li class="item option"><a href="3" class="link">Login</a>
+		<ul class="nav">
+	<li class="item"><a href="3" class="link">Home</a></li>
+	<li class="item"><a href="3" class="link">About</a></li>
+	<li class="item"><a href="3" class="link">Contact</a></li>
+	<li class="item"><a href="3" class="link">Gallery</a></li>
+	<li class="item"><a href="3" class="link">Login</a></li>
+</ul>
+	</li>
+	
+</ul>
+<style>
+.nav{
+	border:2px solid red;
+	list-style:none;
+	padding:0px;
+	box-shadow:4px 9px 8px green;
+	
+}
+.item{
+	float:left;
+	border:2px solid blue;
+	border-radius:5px;
+	
+	
+}
+.nav::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.nav .item:hover{
+	background:red;
+}
+.nav .item .link{
+	display:block;
+	padding:10px 20px;
+	text-decoration:none;	
+}
+.option .item{
+	clear:both;
+	width:100%;	
+}
+.option .nav{
+	display:none;
+	position:absolute;
+	
+}
+.option:hover .nav{
+	display:block;
+}
+</style>
+</body>	
+</html>

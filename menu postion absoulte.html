@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>position-absolute</title>
+	</head>
+<body>
+<ul class="nav">
+	<li class="item"><a href="8" class="link">Home</a></li>
+	<li class="item"><a href="8" class="link">About</a></li>
+	<li class="item dropdown"><a href="8" class="link">Gallery</a>
+		<ul class="nav">
+	<li class="item"><a href="8" class="link">Home</a></li>
+	<li class="item"><a href="8" class="link">About</a></li>
+	<li class="item"><a href="8" class="link">Gallery</a></li>
+	<li class="item"><a href="8" class="link">contact</a></li>
+</ul>
+	</li>
+	<li class="item"><a href="8" class="link">contact</a></li>
+	<li class="item"><a href="8" class="link">Login</a></li>
+</ul>
+</ul>
+<style>
+.nav{
+	border:2px solid red;
+	padding:0px;
+	list-style:none;
+}
+.nav::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+.nav .item{
+	border:2px solid blue;
+	float:left;
+}
+.nav .item:hover{
+	background:orange;
+	
+}
+.nav .item .link{
+	padding:10px 20px;
+	display:block;
+	text-decoration:none;
+}
+.dropdown .nav .item{
+	clear:both;
+	width:100%;
+}
+.dropdown .nav{
+	display:none;
+	position:absolute;
+}
+.dropdown:hover .nav{
+	display:block;
+}
+
+	
+
+</style>
+</body>	
+</html>

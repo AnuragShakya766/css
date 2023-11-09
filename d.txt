@@ -1,0 +1,5 @@
+<html>
+	<head>
+		<title> order menu display inline or block</title>
+	</head>
+</html>
