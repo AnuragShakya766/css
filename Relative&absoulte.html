@@ -1,39 +1,25 @@
 <html>
 	<head>
-		<title> postion-absolute</title>
+		<title> realeative</title>
 	</head>
+	
 <body>
-<div class="d d1"> hello 1</div>
-<div class="d d2"> hello 1
-	<div class="d2-1">hello</div>
-</div>
-<div class="d d3"> hello 1</div>
-<div class="d d4"> hello 1</div>
 <style>
-.d{
+	<div class="nav-list">
+		 WEB DEVELOPMENT
+		<div class="nav-item">
+			html<br>
+			css<br>
+			java
+	</div>
+.nav-list{
 	border:2px solid red;
-	width:100px;
-	height:100px;
-	
-}
-.d2{
-	border:2px solid blue;
-	position:relative;
+	background-color:green;
+	box-shadow:4px 5px 8px gray;
+	color:white;
+}	
 
-}
-.d2-1{
-	border:2px solid green;
-	position:absolute;
-	left:100%;
-	display:none;
-	height:100px;
-	width:120px;
-	
-	
-}
-.d2:hover .d2-1{
-	display:block;
-}
+
 </style>
 </body>	
 </html>
